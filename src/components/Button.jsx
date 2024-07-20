@@ -5,7 +5,7 @@ const Button = (props) => {
                 props.backgroundColor
                     ? `${props.backgroundColor} ${props.textColor} ${props.borderColor}`
                     : "bg-coral-red  text-white border-coral-red"
-            } `}
+            } ${props.fullWidth && "w-full"}`}
         >
             {props.label}
             {props.iconURL && (
